@@ -1,0 +1,58 @@
+<!--
+<name attribute="value">Content</name>
+<human gender="male">Human</human>
+-->
+
+
+<!DOCTYPE html> <!-- self-contained Tag: open and close itself -->
+<html>
+  <head> <!-- information about your website to web browser -->
+    <meta charset="utf-8">
+    <meta name="author" content="J">
+    <meta name="description" content="Welcome to my Kakao Clone">
+
+    <title>Basic of HTML and CSS</title>
+
+    <link href="styels.css" rel="styelsheet">
+    <style>
+      /* selector {   <-- selector : tagname, #id, .class
+        property-name: value;  <-- property is always lower case and end with ;
+      } */
+      body,html{ /* for removing the default of brower has */
+        height:100%;
+        width:100%;
+        margin:0;
+        padding:0;
+      }
+      .box {
+        height:400px;
+        width:300px;
+        /* 4 boxes (margin/border/padding/content) */
+        margin: 20px 10px 5px 2px;
+        border: 5px dashed red; /* width style color */
+        padding: 20px 10px 5px 2px; /* top right bottom left (clock)*/
+
+        /* display -> block, inline block, inline*/
+        display: inline-block;
+        /*  block is elemnet which not allow anything next to it (in style.css: display: block by default )
+        inline-block : can go next to each other (inline-block can keep box and content)
+        inline will remove any property in the element. inline is text. means just size of content */
+
+        position: static;
+        /* static:default, fixed, relative-absolute */
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>This is my bit brother</h1> <!-- sementic Tag : mean something (header, article, section) -->
+    <div>Whatever</div> <!-- non-sementic Tag : mean nothing (div - box, span - container for text)-->
+
+
+
+    <div class="box"> <!-- div.box>div.box-child -->
+      <div class="box-child"></div>
+    </div>
+  </body>
+</html>
