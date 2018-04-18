@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" class="css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Friends</title>
+</head>
+<body>
+  <header class="top-header">
+    <div class="header__top">
+      <div class="header__column">
+        <!-- plane icon -->
+        <i class="fa fa-fighter-jet" aria-hidden="true"></i>
+        <!-- wifi icon -->
+        <i class="fa fa-wifi" aria-hidden="true"></i>
+      </div>
+      <div class="header__column">
+        <!-- time -->
+        <span class="header__time">18:38</span>
+      </div>
+      <div class="header__column">
+        <!-- moon icon -->
+        <i class="fa fa-moon-o" aria-hidden="true"></i>
+        <!-- bluetooth icon -->
+        <i class="fa fa-bluetooth-b" aria-hidden="true"></i>
+        <!-- battery icon -->
+        <span class="header__battery">66%</span><i class="fa fa-battery-full" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="header__column">
+        <span class="header__text">Manage</span>
+      </div>
+      <div class="header__column">
+        <span class="header__text">Friends <span class="header__number">1</span></span>
+      </div>
+      <div class="header__column">
+        <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
+      </div>
+    </div>
+  </header>
+
+  <main class="frineds">
+    <div class="search-bar">
+      <i class="fa fa-search"></i>
+      <input type="text" placeholder="Find friends, chats, Plus friends">
+    </div>
+    <section class="friends__section">
+      <header class="friends__section-header">
+        <h6 class="friends__section-title">My Profile</h6>
+      </header>
+      <div class="friends__section-rows">
+        <div class="friends__section-row">
+          <a href="profile.html">
+            <img src="images/avatar.jpg" alt="">
+            <span class="friends__section-name">Blueberry</span>
+          </a>
+        </div>
+        <div class="friends__section-row">
+          <img src="images/avatar.jpg" alt="">
+          <span class="friends__section-name">Friends' Names Display</span>
+        </div>
+      </div>
+    </section>
+    <section class="friends__section">
+      <header class="friends__section-header">
+        <h6 class="friends__section-title">Friends</h6>
+      </header>
+      <div class="friends__section-rows">
+        <div class="friends__section-row">
+          <div class="friends__section-column">
+            <img src="images/avatar.jpg" alt="">
+            <span class="friends__section-name">Cheese</span>
+          </div>
+          <span class="friends__section-tagline">
+            Life is short, So live your life.
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav>
+    <a href="index.html" class="tab-bar__tab tab-bar__tab--selected">
+      <i class="fa fa-user"></i>
+      <span class="tab-bar__title">Friends</span>
+    </a>
+    <a href="chats.html" class="tab-bar__tab">
+      <i class="fa fa-comment"></i>
+      <span class="tab-bar__title">Chats</span>
+    </a>
+    <a href="find.html" class="tab-bar__tab">
+      <i class="fa fa-search"></i>
+      <span class="tab-bar__title">Find</span>
+    </a>
+    <a href="more.html" class="tab-bar__tab">
+      <i class="fa fa-ellipsis-h"></i>
+      <span class="tab-bar__title">More</span>
+    </a>
+  </nav>
+</body>
+</html>
