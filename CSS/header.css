@@ -2,6 +2,9 @@
   background-color: #523737;
   color: white;
   padding: 5px 10px 15px 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .top-header .header__top,
@@ -21,6 +24,11 @@
 
 .top-header .header__column {
   width: 33%;
+}
+
+/* Edit in Find */
+.top-header .header__bottom .header__column:first-child {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .top-header .header__column:last-child {
