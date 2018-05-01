@@ -1,0 +1,73 @@
+.top-header--transparent {
+  background-color: transparent;
+}
+
+.profile .profile__header {
+  height: 80vh; /* vh = view per height ? -> 80% of the screen */
+  background-image: url("https://i.pinimg.com/736x/60/b0/a7/60b0a7ef623bc2487385bace5d68fc8c--material-wallpapers-android-fantastic-wallpapers.jpg");
+  background-position: center center;
+  background-size: 100%;
+  width: 100%;
+  position: relative;
+  top: -60px; /* remove default -> body has 60px padding-top by default in globals.css*/
+  display: flex;
+  flex-direction: column; /* flex-direction defines the direction items are placed in the container */
+  /* and accepts the following values: row(as the text direction), column(items are placed top to bottom), row-reverse, column-reverse */
+  justify-content: flex-end;
+  /* justify-content property aligns items horizontally */
+  /* flex-start(left side of container), flex-end(right side of container), center, space-between(equal spacing between them), space-around(equal spacing around them) */
+  align-items: center;
+  /* align-items aligns items vertically */
+  /* flex-start(top of container), flex-end(bottom of container), center, baseline, stretch(stretch to fit container) */
+  /* notice if set the direction to a reversed, start and end are also reversed */
+  /* notice if flex direction is a column, justify-content changed to the vertical and align-items to the horizontal */
+}
+
+.profile__header .profile__header-container {
+  text-align: center;
+  position: relative;
+  bottom: -60px;
+}
+
+.profile__header-container img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile .profile__container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__container input {
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.profile__actions {
+  display: flex;
+}
+
+.profile__action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.profile__action-circle {
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 50%;
+  color: #523737;
+  margin-bottom: 15px;
+}
+
+.profile__action-title {
+  font-size: 12px;
+  font-weight: 600;
+}
